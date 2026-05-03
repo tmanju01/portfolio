@@ -1,0 +1,113 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "category": "ENGINEERING",
+            "readTime": "8 MIN READ",
+            "title": "Mastering TanStack Query for Scalable Data Fetching",
+            "description": "Stop using useEffect for data fetching. Learn how to handle caching, race conditions, and loading states like a pro.",
+            "date": "May 02, 2026",
+            "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            "fullContent": [
+                { "type": "p", "text": "If you're still using <code>useEffect</code> to fetch data in your React applications, you're likely fighting an uphill battle against race conditions, caching, and state management boilerplate." },
+                { "type": "h3", "text": "The Problem with useEffect" },
+                { "type": "p", "text": "A typical fetch inside <code>useEffect</code> looks simple, but it hides complexity. What happens if the component unmounts before the fetch completes? What if the user triggers multiple requests in quick succession? Handling these scenarios manually is tedious and error-prone." },
+                { "type": "code", "text": "// The 'standard' but problematic way\nuseEffect(() => {\n  let isMounted = true;\n  fetchData().then(data => {\n    if (isMounted) setData(data);\n  });\n  return () => { isMounted = false; };\n}, [query]);" },
+                { "type": "h3", "text": "The TanStack Query Solution" },
+                { "type": "p", "text": "TanStack Query (formerly React Query) takes the burden off your shoulders by treating data fetching as a server-state problem rather than a side-effect. It provides built-in caching, automatic re-fetching, and declarative loading/error states." },
+                { "type": "code", "text": "const { data, isLoading, error } = useQuery({\n  queryKey: ['users', userId],\n  queryFn: () => fetchUser(userId),\n  staleTime: 1000 * 60 * 5, // 5 minutes\n});" },
+                { "type": "h3", "text": "Conclusion" },
+                { "type": "p", "text": "By adopting TanStack Query, you can delete hundreds of lines of boilerplate code and provide a much snappier experience for your users with zero-effort caching and synchronization." }
+            ]
+        },
+        {
+            "id": 2,
+            "category": "ARCHITECTURE",
+            "readTime": "7 MIN READ",
+            "title": "Next.js App Router: Navigating the Server-Client Boundary",
+            "description": "The 'use client' directive is often misunderstood. Here is how to structure your components for maximum performance.",
+            "date": "Apr 25, 2026",
+            "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            "fullContent": [
+                { "type": "p", "text": "The introduction of Server Components in Next.js has fundamentally changed how we think about the 'where' and 'when' of code execution. But with great power comes great confusion." },
+                { "type": "h3", "text": "The Composition Pattern" },
+                { "type": "p", "text": "A common mistake is placing <code>'use client'</code> at the top of a large page component just because one small button needs a click handler. This defeats the purpose of Server Components, which are designed to stay on the server and reduce the JS bundle size." },
+                { "type": "p", "text": "Instead, use the composition pattern: keep your data-heavy components as Server Components and wrap interactive elements in small, focused Client Components." },
+                { "type": "code", "text": "// Page.tsx (Server Component)\nexport default async function Page() {\n  const data = await fetchData(); // Runs on server\n\n  return (\n    <section>\n      <DataDisplay data={data} />\n      <InteractiveButton> // Client Component\n        Click Me\n      </InteractiveButton>\n    </section>\n  );\n}" },
+                { "type": "h3", "text": "Serialization is Key" },
+                { "type": "p", "text": "Remember that data passed from Server Components to Client Components must be serializable. You cannot pass functions or complex class instances across this boundary." },
+                { "type": "h3", "text": "Final Thoughts" },
+                { "type": "p", "text": "Default to Server Components. Only opt into <code>'use client'</code> when you absolutely need hooks like <code>useState</code> or <code>useEffect</code>. Your users' lighthouse scores will thank you." }
+            ]
+        },
+        {
+            "id": 3,
+            "category": "PERFORMANCE",
+            "readTime": "6 MIN READ",
+            "title": "Performance Audit: Stopping Unnecessary Re-renders",
+            "description": "Is your React app feeling sluggish? Most of the time, the culprit is unoptimized state updates and heavy tree renders.",
+            "date": "Apr 18, 2026",
+            "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            "fullContent": [
+                { "type": "p", "text": "React is fast, but it's not magic. In large applications, a single state update at the root level can trigger a cascade of re-renders that lock the main thread and frustrate users." },
+                { "type": "h3", "text": "Identify the Bottleneck" },
+                { "type": "p", "text": "Use the React DevTools Profiler to identify which components are rendering too often. Look for 'rendered because parent component rendered' messages. Often, you can fix this by simply lifting state down or using <code>React.memo</code>." },
+                { "type": "h3", "text": "When to use Memoization" },
+                { "type": "p", "text": "Over-memoization can actually hurt performance. Use <code>useMemo</code> for heavy computations and <code>useCallback</code> only when passing functions to memoized child components." },
+                { "type": "code", "text": "// Only re-renders if props actually change\nconst HeavyComponent = memo(({ data, onSelect }) => {\n  return (\n    <div>\n      {/* Complex UI */}\n    </div>\n  );\n});" },
+                { "type": "h3", "text": "Conclusion" },
+                { "type": "p", "text": "Don't prematurely optimize, but keep a watchful eye on your component tree. Strategic state placement is usually more effective than wrapping everything in <code>useMemo</code>." }
+            ]
+        },
+        {
+            "id": 4,
+            "category": "ENGINEERING",
+            "readTime": "5 MIN READ",
+            "title": "Runtime Safety with Next.js, Zod, and TypeScript",
+            "description": "TypeScript catches build-time errors, but Zod ensures your app doesn't crash when receiving unexpected data at runtime.",
+            "date": "Apr 10, 2026",
+            "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            "fullContent": [
+                { "type": "p", "text": "TypeScript is fantastic for developer experience, but it disappears at runtime. If your API returns a null where you expected a string, your app will still crash. Enter Zod." },
+                { "type": "h3", "text": "Schema-First Validation" },
+                { "type": "p", "text": "Zod allows you to define a schema that validates data at the boundary of your application—whether it's from a form, a database, or an external API." },
+                { "type": "code", "text": "const UserSchema = z.object({\n  id: z.string().uuid(),\n  email: z.string().email(),\n  age: z.number().min(18).optional(),\n});\n\n// Automatically derives the TypeScript type\ntype User = z.infer<typeof UserSchema>;" },
+                { "type": "h3", "text": "Using Zod in Server Actions" },
+                { "type": "p", "text": "In Next.js, Zod is a perfect companion for Server Actions. You can validate the <code>formData</code> before performing any database operations, ensuring that only clean data ever touches your backend." },
+                { "type": "code", "text": "export async function createUser(formData: FormData) {\n  const result = UserSchema.safeParse(\n    Object.fromEntries(formData.entries())\n  );\n\n  if (!result.success) {\n    return { error: result.error.flatten() };\n  }\n  \n  // Save to DB safely...\n}" },
+                { "type": "h3", "text": "Conclusion" },
+                { "type": "p", "text": "Combining TypeScript with Zod gives you end-to-end type safety that actually works at runtime. It's the secret sauce for building resilient, enterprise-grade applications." }
+            ]
+        }
+    ],
+    "contactLinks": [
+        {
+            "id": 1,
+            "platform": "WHATSAPP",
+            "handle": "+91 98983 43610",
+            "url": "https://wa.me/919898343610",
+            "iconClass": "fab fa-whatsapp"
+        },
+        {
+            "id": 2,
+            "platform": "EMAIL",
+            "handle": "thakor.manju.391@gmail.com",
+            "url": "mailto:thakor.manju.391@gmail.com",
+            "iconClass": "fas fa-envelope"
+        },
+        {
+            "id": 3,
+            "platform": "LINKEDIN",
+            "handle": "in/thakor-manju",
+            "url": "https://linkedin.com/in/thakor-manju",
+            "iconClass": "fab fa-linkedin-in"
+        },
+        {
+            "id": 4,
+            "platform": "GITHUB",
+            "handle": "tmanju01",
+            "url": "https://github.com/tmanju01",
+            "iconClass": "fab fa-github"
+        }
+    ]
+}

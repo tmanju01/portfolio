@@ -1,0 +1,79 @@
+MANJU THAKOR
+Frontend Developer | React.js • Next.js • JavaScript
++91 9898343610 | thakor.manju.391@gmail.com | LinkedIn | GitHub | Portfolio
+
+PROFESSIONAL SUMMARY
+Results-driven Frontend Developer with 3+ years of experience building responsive, high-performance web
+applications using React.js and Next.js. Proven ability to translate complex client requirements into scalable,
+user-centric interfaces while collaborating closely with cross-functional teams. Adept at REST API integration,
+performance optimization, and delivering production-ready features on schedule.
+
+TECHNICAL SKILLS
+Frontend:
+React.js, Next.js, JavaScript (ES6+), HTML5, CSS3
+UI Libraries: Tailwind CSS, Bootstrap, Ant Design, jQuery
+Tools & Platforms: Git, GitHub, VS Code, Chrome DevTools, Linux
+Core Concepts: REST API Integration, Responsive Design, Performance Optimization, Cross-functional
+Collaboration
+
+WORK EXPERIENCE
+Frontend Developer · PySquad Informatics
+
+Sep 2023 – Present (1 yr 8 mo)
+
+• Engineered and maintained responsive, scalable web applications using React.js, Next.js, Tailwind CSS,
+Bootstrap, and Ant Design, reducing UI inconsistencies across devices.
+• Integrated 10+ REST APIs and applied performance optimization techniques, improving application load
+times and overall user experience.
+• Partnered with backend engineers, designers, and stakeholders across full project lifecycle to consistently
+deliver features on or ahead of schedule.
+• Analyzed client requirements and proposed efficient frontend architectures, reducing rework cycles and
+accelerating delivery timelines.
+• Championed best practices in component reusability and code maintainability, contributing to a cleaner,
+more scalable codebase.
+
+Frontend Developer Intern · Tops Technologies
+
+Jan 2023 – Jun 2023 (6 mo)
+
+• Built and deployed multiple responsive web pages and mini-projects using HTML5, CSS3, JavaScript
+(ES6+), and React.js.
+• Gained hands-on experience integrating front-end interfaces with REST APIs, strengthening understanding
+of frontend-backend communication.
+• Accelerated debugging proficiency by resolving UI and logic issues through systematic use of browser
+developer tools.
+
+KEY PROJECTS
+Marinapy – Marina Management SaaS Platform | React.js, Next.js, Ant Design, REST APIs, Tailwind CSS
+• Developed a cloud-based marina management SaaS platform covering end-to-end operations including
+berth management, CRM, billing, and client communication.
+• Built responsive, map-based data visualization interfaces enabling marina operators to monitor occupancy
+and assets in real time.
+• Implemented self-service onboarding flows and mobile-ready UI components, improving accessibility and
+adoption for global users.
+• Collaborated with backend teams to integrate REST APIs across all modules, ensuring seamless and
+reliable data flow throughout the platform.
+• Optimized frontend performance for large datasets, maintaining smooth user experience at scale across
+complex operational dashboards.
+Texture – Digital Marketing SaaS Platform | React.js, REST APIs, Django Templates
+• Contributed to a SaaS platform combining REST API integration and Django templates to deliver AIpowered text analysis and advertising enhancement tools.
+• Built dynamic UI components enabling marketers to seamlessly integrate API-driven workflows for
+automated ad optimization and content analysis.
+• Leveraged Django template rendering to support context-aware, dynamic content optimization, improving
+advertising precision for end users.
+• Designed a user-friendly, responsive interface that helps marketing teams extract actionable insights with
+minimal friction.
+ShareLyze | React.js, HTML, CSS, REST APIs
+• Designed and developed a secure file-sharing platform supporting images and PDFs with full user
+authentication (registration and login).
+• Built a real-time activity tracking system capturing views, user interactions, and IP-level insights to support
+analytics and security monitoring.
+• Integrated REST APIs for dynamic data handling and implemented responsive design principles, ensuring
+consistent experience across all screen sizes.
+
+EDUCATION
+Bachelor of Computer Applications (BCA) | CGPA: 7.67 / 10
+
+Hemchandracharya North Gujarat University, Palanpur, Gujarat · 2018 – 2022
+
+
