@@ -1,6 +1,6 @@
-import marinapyImg from '../image/marinapy_project_card.svg';
-import sharelyzeImg from '../image/sharelyze_project_card.svg';
-import textureImg from '../image/texture_project_card.svg';
+const marinapyImg = 'image/marinapy_project_card.svg';
+const sharelyzeImg = 'image/sharelyze_project_card.svg';
+const textureImg = 'image/texture_project_card.svg';
 
 function Portfolio() {
   return (

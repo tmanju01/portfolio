@@ -1,4 +1,4 @@
-import profilePic from '../image/profile-pic.jpeg';
+const profilePic = 'image/profile-pic.jpeg';
 
 function Sidebar({ theme, toggleTheme, portfolioData }) {
   // Separate WhatsApp and Email for the top list, and others for social links
@@ -70,7 +70,7 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
         ))}
       </div>
       <a
-        href="/Manju_Thakor_Resume.pdf"
+        href="Manju_Thakor_Resume.pdf"
         download="Manju_Thakor_Resume.pdf"
         className="btn-download"
       >
