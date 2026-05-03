@@ -1,4 +1,4 @@
-const profilePic = 'image/profile-pic.jpeg';
+const profilePic = 'image/profile-pic.png';
 
 function Sidebar({ theme, toggleTheme, portfolioData }) {
   // Separate WhatsApp and Email for the top list, and others for social links
@@ -22,13 +22,15 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
         <i className={theme === 'light' ? 'fas fa-moon' : 'fas fa-sun'}></i>
       </button>
       <div className="profile-img-container">
-        <img
-          src={profilePic}
-          alt="Manju Thakor"
-          className="profile-img"
-          width="130"
-          height="130"
-        />
+        <div className="profile-img-inner">
+          <img
+            src={profilePic}
+            alt="Manju Thakor"
+            className="profile-img"
+            width="130"
+            height="130"
+          />
+        </div>
         <span className="active-status" title="Active Now"></span>
       </div>
       <h2>Manju Thakor</h2>
