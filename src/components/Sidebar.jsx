@@ -29,12 +29,21 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
           width="130"
           height="130"
         />
+        <span className="active-status" title="Active Now"></span>
       </div>
       <h2>Manju Thakor</h2>
       <div className="badges">
         <span className="badge">Frontend Developer</span>
         <span className="badge">React.js Expert</span>
       </div>
+
+       <a
+        href="resume.pdf"
+        download="Resume.pdf"
+        className="btn-download"
+      >
+        <i className="fas fa-download" style={{ marginRight: '8px' }}></i> Download CV
+      </a>
 
       <div className="info-list">
         {/* Priority Contact Info (WhatsApp, Email) */}
@@ -69,13 +78,7 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
           </a>
         ))}
       </div>
-      <a
-        href="Manju_Thakor_Resume.pdf"
-        download="Manju_Thakor_Resume.pdf"
-        className="btn-download"
-      >
-        <i className="fas fa-download" style={{ marginRight: '8px' }}></i> Download CV
-      </a>
+     
       {/* <a href="#" className="btn-download">
         <i className="fas fa-download" style={{ marginRight: '8px' }}></i> Download CV
       </a> */}

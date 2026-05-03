@@ -174,7 +174,7 @@ h6,
   color: white;
   box-shadow: 0 8px 16px var(--bs-light);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .profile-img {
@@ -209,6 +209,39 @@ h6,
   100% {
     transform: scale(1);
     opacity: 0.15;
+  }
+}
+
+.active-status {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 14px;
+  height: 14px;
+  background: #22c55e;
+  border: 3px solid var(--bg-card);
+  border-radius: 50%;
+  z-index: 5;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.active-status::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid #22c55e;
+  animation: status-pulse 2s infinite;
+}
+
+@keyframes status-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
   }
 }
 
@@ -313,7 +346,7 @@ h6,
   background: var(--primary-gradient);
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: var(--border-radius-sm);
   font-weight: 700;
   text-decoration: none;
@@ -322,6 +355,7 @@ h6,
   border: none;
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(79, 70, 229, 0.2);
+  margin-bottom: 15px;
 }
 
 .btn-download:hover {
