@@ -3,7 +3,7 @@ function About() {
     <div className="fade-in">
       <h2 className="section-title">About Me</h2>
       <p className="about-text" style={{ animationDelay: '0.1s' }}>
-        I am a <strong className="gradient-text">Frontend Developer</strong> at <strong>PySquad Informatics</strong> with over 2 years of experience. I build responsive, scalable, and performance-driven web applications using modern Javascript ecosystems.
+        I am a <strong className="gradient-text">Frontend Developer</strong> at <strong>PySquad Informatics</strong> with over 3 years of experience. I build responsive, scalable, and performance-driven web applications using modern Javascript ecosystems.
       </p>
       <p className="about-text" style={{ animationDelay: '0.15s' }}>
         My expertise lies in <strong>React.js, Next.js, and modern CSS frameworks</strong>. I thrive in collaborative environments, creating user-centric digital experiences, writing clean code, and ensuring pixel-perfect execution of designs.
@@ -13,7 +13,7 @@ function About() {
         <div className="stat-box fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="stat-icon"><i className="fas fa-calendar-alt"></i></div>
           <div className="stat-info">
-            <h3>2+</h3>
+            <h3>3+</h3>
             <p>Years Exp</p>
           </div>
         </div>
