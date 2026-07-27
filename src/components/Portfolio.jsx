@@ -45,34 +45,58 @@ function Portfolio() {
               <span className="tech-badge">Django</span>
               <span className="tech-badge">REST APIs</span>
             </div>
-            <div className="project-links">
+            {/* <div className="project-links">
               <a href="#" className="live-link" target="_blank" rel="noopener noreferrer">
                 View Live Project <i className="fas fa-external-link-alt"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <div className="project-card fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="project-img">
-            <span className="project-tag">Web App</span>
-            <img src={sharelyzeImg} alt="ShareLyze" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div className="project-content">
-            <h3>ShareLyze</h3>
-            <p>Designed and developed a secure file-sharing platform supporting images and PDFs. Built a real-time activity tracking system capturing views, user interactions, and IP-level insights to support analytics and security monitoring.</p>
-            <div className="tech-stack">
-              <span className="tech-badge">JAVASCRIPT</span>
-              <span className="tech-badge">HTML/CSS</span>
-              <span className="tech-badge">REST APIs</span>
-            </div>
-            <div className="project-links">
-              <a href="https://sharelyze.com/" className="live-link" target="_blank" rel="noopener noreferrer">
-                View Live Project <i className="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+       <div className="project-card fade-in" style={{ animationDelay: '0.3s' }}>
+  <div className="project-img">
+    <span className="project-tag">MERN Stack</span>
+    <img
+      src={sharelyzeImg}
+      alt="ShareLyze"
+      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+    />
+  </div>
+
+  <div className="project-content">
+    <h3>ShareLyze</h3>
+
+    <p>
+      Developed a secure file-sharing platform using the MERN Stack. Built RESTful APIs
+      with Node.js and Express.js, stored file metadata in MongoDB using Mongoose,
+      implemented JWT-based authentication, and created a responsive React.js frontend.
+      Added real-time activity tracking, including file views, user interactions,
+      and IP-based analytics for improved security and monitoring.
+    </p>
+
+    <div className="tech-stack">
+      <span className="tech-badge">React.js</span>
+      <span className="tech-badge">Node.js</span>
+      <span className="tech-badge">Express.js</span>
+      <span className="tech-badge">MongoDB</span>
+      <span className="tech-badge">Mongoose</span>
+      <span className="tech-badge">JWT</span>
+      <span className="tech-badge">REST API</span>
+      <span className="tech-badge">Tailwind CSS</span>
+    </div>
+
+    {/* <div className="project-links">
+      <a
+        href="https://sharelyze.com/"
+        className="live-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Live Project <i className="fas fa-external-link-alt"></i>
+      </a>
+    </div> */}
+  </div>
+</div>
 
       </div>
     </div>

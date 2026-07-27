@@ -35,8 +35,8 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
       </div>
       <h2>Manju Thakor</h2>
       <div className="badges">
-        <span className="badge">Frontend Developer</span>
-        <span className="badge">React.js Expert</span>
+        <span className="badge">Frontend Expert</span>
+        <span className="badge">Mern Stack Expert</span>
       </div>
 
        <a
