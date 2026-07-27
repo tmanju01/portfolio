@@ -1,25 +1,37 @@
-const profilePic = 'image/profile-pic.png';
+const profilePic = "image/profile-pic.png";
 
 function Sidebar({ theme, toggleTheme, portfolioData }) {
   // Separate WhatsApp and Email for the top list, and others for social links
-  const contactInfo = portfolioData.contactLinks.filter(link =>
-    link.platform === 'WHATSAPP' || link.platform === 'EMAIL'
+  const contactInfo = portfolioData.contactLinks.filter(
+    (link) => link.platform === "WHATSAPP" || link.platform === "EMAIL",
   );
 
-  const socialLinks = portfolioData.contactLinks.filter(link =>
-    link.platform !== 'WHATSAPP' && link.platform !== 'EMAIL'
+  const socialLinks = portfolioData.contactLinks.filter(
+    (link) => link.platform !== "WHATSAPP" && link.platform !== "EMAIL",
   );
 
   // Other static info
   const otherInfo = [
-    { label: 'Location', value: 'Gujarat, India', icon: 'fas fa-map-marker-alt' },
-    { label: 'Current Organisation', value: 'PySquad Informatics', icon: 'fas fa-building' }
+    {
+      label: "Location",
+      value: "Gujarat, India",
+      icon: "fas fa-map-marker-alt",
+    },
+    {
+      label: "Current Organisation",
+      value: "PySquad Informatics",
+      icon: "fas fa-building",
+    },
   ];
 
   return (
     <aside className="sidebar fade-in">
-      <button className="theme-toggle sidebar-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
-        <i className={theme === 'light' ? 'fas fa-moon' : 'fas fa-sun'}></i>
+      <button
+        className="theme-toggle sidebar-toggle"
+        onClick={toggleTheme}
+        aria-label="Toggle Theme"
+      >
+        <i className={theme === "light" ? "fas fa-moon" : "fas fa-sun"}></i>
       </button>
       <div className="profile-img-container">
         <div className="profile-img-inner">
@@ -39,22 +51,26 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
         <span className="badge">Mern Stack Expert</span>
       </div>
 
-       <a
-        href="resume.pdf"
-        download="Resume.pdf"
-        className="btn-download"
-      >
-        <i className="fas fa-download" style={{ marginRight: '8px' }}></i> Download CV
+      <a href="resume.pdf" download="Resume.pdf" className="btn-download">
+        <i className="fas fa-download" style={{ marginRight: "8px" }}></i>{" "}
+        Download CV
       </a>
 
       <div className="info-list">
         {/* Priority Contact Info (WhatsApp, Email) */}
         {contactInfo.map((link) => (
           <div className="info-item" key={link.id}>
-            <div className="info-icon"><i className={link.iconClass}></i></div>
+            <div className="info-icon">
+              <i className={link.iconClass}></i>
+            </div>
             <div className="info-content">
               <p>{link.platform}</p>
-              <a href={link.url} target={link.platform === 'WHATSAPP' ? "_blank" : "_self"} rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <a
+                href={link.url}
+                target={link.platform === "WHATSAPP" ? "_blank" : "_self"}
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <h4>{link.handle}</h4>
               </a>
             </div>
@@ -64,7 +80,9 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
         {/* Other Info */}
         {otherInfo.map((info, index) => (
           <div className="info-item" key={index}>
-            <div className="info-icon"><i className={info.icon}></i></div>
+            <div className="info-icon">
+              <i className={info.icon}></i>
+            </div>
             <div className="info-content">
               <p>{info.label}</p>
               <h4>{info.value}</h4>
@@ -75,12 +93,19 @@ function Sidebar({ theme, toggleTheme, portfolioData }) {
 
       <div className="social-links">
         {socialLinks.map((link) => (
-          <a key={link.id} href={link.url} target="_blank" rel="noreferrer" className="social-link" title={link.platform}>
+          <a
+            key={link.id}
+            href={link.url}
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+            title={link.platform}
+          >
             <i className={link.iconClass}></i>
           </a>
         ))}
       </div>
-     
+
       {/* <a href="#" className="btn-download">
         <i className="fas fa-download" style={{ marginRight: '8px' }}></i> Download CV
       </a> */}

@@ -1,22 +1,33 @@
-const marinapyImg = 'image/marinapy_project_card.svg';
-const sharelyzeImg = 'image/sharelyze_project_card.svg';
-const textureImg = 'image/texture_project_card.svg';
+const marinapyImg = "image/marinapy_project_card.svg";
+const sharelyzeImg = "image/sharelyze_project_card.svg";
+const textureImg = "image/texture_project_card.svg";
 
 function Portfolio() {
   return (
     <div className="fade-in">
       <h2 className="section-title">Portfolio</h2>
 
-      <div className="projects-grid" style={{ marginTop: '1rem' }}>
-
-        <div className="project-card fade-in" style={{ animationDelay: '0.1s' }}>
+      <div className="projects-grid" style={{ marginTop: "1rem" }}>
+        <div
+          className="project-card fade-in"
+          style={{ animationDelay: "0.1s" }}
+        >
           <div className="project-img">
             <span className="project-tag">SaaS Platform</span>
-            <img src={marinapyImg} alt="Marinapy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img
+              src={marinapyImg}
+              alt="Marinapy"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           </div>
           <div className="project-content">
             <h3>Marinapy – Marina Management</h3>
-            <p>Developed a cloud-based SaaS platform for end-to-end operations including berth management, CRM, and billing. Built responsive, map-based data visualization for real-time asset monitoring and implemented self-service onboarding flows.</p>
+            <p>
+              Developed a cloud-based SaaS platform for end-to-end operations
+              including berth management, CRM, and billing. Built responsive,
+              map-based data visualization for real-time asset monitoring and
+              implemented self-service onboarding flows.
+            </p>
             <div className="tech-stack">
               <span className="tech-badge">React.js</span>
               <span className="tech-badge">Next.js</span>
@@ -25,21 +36,38 @@ function Portfolio() {
               <span className="tech-badge">REST APIs</span>
             </div>
             <div className="project-links">
-              <a href="https://marinapy.com/" className="live-link" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://marinapy.com/"
+                className="live-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View Live Project <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <div className="project-card fade-in" style={{ animationDelay: '0.2s' }}>
+        <div
+          className="project-card fade-in"
+          style={{ animationDelay: "0.2s" }}
+        >
           <div className="project-img">
             <span className="project-tag">SaaS Platform</span>
-            <img src={textureImg} alt="Texture" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img
+              src={textureImg}
+              alt="Texture"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           </div>
           <div className="project-content">
             <h3>Texture – Digital Marketing</h3>
-            <p>Contributed to a SaaS platform delivering AI-powered text analysis and ad enhancement tools. Built dynamic UI components to seamlessly integrate API-driven workflows for ad optimization and context-aware Django template rendering.</p>
+            <p>
+              Contributed to a SaaS platform delivering AI-powered text analysis
+              and ad enhancement tools. Built dynamic UI components to
+              seamlessly integrate API-driven workflows for ad optimization and
+              context-aware Django template rendering.
+            </p>
             <div className="tech-stack">
               <span className="tech-badge">HTML/CSS</span>
               <span className="tech-badge">Django</span>
@@ -53,39 +81,44 @@ function Portfolio() {
           </div>
         </div>
 
-       <div className="project-card fade-in" style={{ animationDelay: '0.3s' }}>
-  <div className="project-img">
-    <span className="project-tag">MERN Stack</span>
-    <img
-      src={sharelyzeImg}
-      alt="ShareLyze"
-      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-    />
-  </div>
+        <div
+          className="project-card fade-in"
+          style={{ animationDelay: "0.3s" }}
+        >
+          <div className="project-img">
+            <span className="project-tag">MERN Stack</span>
+            <img
+              src={sharelyzeImg}
+              alt="ShareLyze"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
 
-  <div className="project-content">
-    <h3>ShareLyze</h3>
+          <div className="project-content">
+            <h3>ShareLyze</h3>
 
-    <p>
-      Developed a secure file-sharing platform using the MERN Stack. Built RESTful APIs
-      with Node.js and Express.js, stored file metadata in MongoDB using Mongoose,
-      implemented JWT-based authentication, and created a responsive React.js frontend.
-      Added real-time activity tracking, including file views, user interactions,
-      and IP-based analytics for improved security and monitoring.
-    </p>
+            <p>
+              Developed a secure file-sharing platform using the MERN Stack.
+              Built RESTful APIs with Node.js and Express.js, stored file
+              metadata in MongoDB using Mongoose, implemented JWT-based
+              authentication, and created a responsive React.js frontend. Added
+              real-time activity tracking, including file views, user
+              interactions, and IP-based analytics for improved security and
+              monitoring.
+            </p>
 
-    <div className="tech-stack">
-      <span className="tech-badge">React.js</span>
-      <span className="tech-badge">Node.js</span>
-      <span className="tech-badge">Express.js</span>
-      <span className="tech-badge">MongoDB</span>
-      <span className="tech-badge">Mongoose</span>
-      <span className="tech-badge">JWT</span>
-      <span className="tech-badge">REST API</span>
-      <span className="tech-badge">Tailwind CSS</span>
-    </div>
+            <div className="tech-stack">
+              <span className="tech-badge">React.js</span>
+              <span className="tech-badge">Node.js</span>
+              <span className="tech-badge">Express.js</span>
+              <span className="tech-badge">MongoDB</span>
+              <span className="tech-badge">Mongoose</span>
+              <span className="tech-badge">JWT</span>
+              <span className="tech-badge">REST API</span>
+              <span className="tech-badge">Tailwind CSS</span>
+            </div>
 
-    {/* <div className="project-links">
+            {/* <div className="project-links">
       <a
         href="https://sharelyze.com/"
         className="live-link"
@@ -95,13 +128,11 @@ function Portfolio() {
         View Live Project <i className="fas fa-external-link-alt"></i>
       </a>
     </div> */}
-  </div>
-</div>
-
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Portfolio;
-

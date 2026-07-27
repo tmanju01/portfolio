@@ -16,9 +16,17 @@ const Skills = () => {
       title: "Backend",
       skills: [
         { name: "Node.js", icon: "fab fa-node-js", color: "#339933" },
-        { name: "Express.js", icon: "si si-express", color: "var(--text-main)" },
+        {
+          name: "Express.js",
+          icon: "si si-express",
+          color: "var(--text-main)",
+        },
         { name: "REST APIs", icon: "fas fa-server", color: "#4CAF50" },
-        { name: "JWT Authentication", icon: "fas fa-user-shield", color: "#FF9800" },
+        {
+          name: "JWT Authentication",
+          icon: "fas fa-user-shield",
+          color: "#FF9800",
+        },
       ],
     },
 
@@ -37,7 +45,11 @@ const Skills = () => {
         { name: "Bootstrap", icon: "fab fa-bootstrap", color: "#7952B3" },
         { name: "Ant Design", icon: "fas fa-cubes", color: "#1890FF" },
         { name: "Material UI", icon: "si si-mui", color: "#007FFF" },
-        { name: "Responsive Design", icon: "fas fa-mobile-alt", color: "#FF5722" },
+        {
+          name: "Responsive Design",
+          icon: "fas fa-mobile-alt",
+          color: "#FF5722",
+        },
       ],
     },
 
